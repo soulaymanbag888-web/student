@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - Student</title>
+    <link rel="icon" type="image/png" href="https://www.bing.com/images/search?view=detailV2&ccid=CW2i4%2bLJ&id=0263F4F74622A05D9D6BB18C813DB89C4CE51F95&thid=OIP.CW2i4-LJBnv6s4ySRIUv7QHaHg&mediaurl=https%3a%2f%2fwww.clipartmax.com%2fpng%2fmiddle%2f284-2845938_icon-student-icon-image-for-students.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.096da2e3e2c9067bfab38c9244852fed%3frik%3dlR%252flTJy4PYGMsQ%26pid%3dImgRaw%26r%3d0&exph=852&expw=840&q=icon+student+32x64&mode=overlay&FORM=IQFRBA&ck=7275373F80A18E12104744FEA1CAB393&selectedIndex=0&idpp=serp">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h2>Student</h2>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Accueil</span>
+            </a>
+            <a href="lessons/equations.html" class="nav-item">
+                <i class="fas fa-calculator"></i>
+                <span>Les équations</span>
+            </a>
+            <a href="lessons/systeme.html" class="nav-item">
+                <i class="fas fa-columns"></i>
+                <span>les systèmes</span>
+            </a>
+            <a href="about.html" class="nav-item">
+                <i class="fas fa-info-circle"></i>
+                <span>À propos du site</span>
+            </a>
+            <div class="didebar-footer">
+            <a href="contact.html" class="nav-item active">
+                <i class="fas fa-envelope"></i>
+                <span>Contactez-nous</span>
+            </a>
+            </div>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <button id="logoutBtn" class="nav-item logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>تسجيل الخروج</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="header-title">
+                <h1>اتصل بنا</h1>
+            </div>
+            
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle" title="تغيير السمة">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Contact Section -->
+        <section class="welcome-section">
+            <div class="welcome-card">
+                <div class="welcome-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="welcome-text">
+                    <h2>نحن هنا لمساعدتك!</h2>
+                    <p>إذا كان لديك أي سؤال أو استفسار، لا تتردد في التواصل معنا</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="lessons-section">
+            <div class="lesson-section" style="max-width: 700px; margin: 0 auto;">
+                <div class="section-header" style="justify-content: center; border-bottom: none; padding-bottom: 0;">
+                    <div class="section-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h2 style="text-align: center;">أرسل لنا رسالة</h2>
+                </div>
+                
+                <form action="https://formspree.io/f/xojnbwoq" method="POST" class="auth-form" style="margin-top: var(--spacing-xl);">
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i>
+                            اسمك الكامل
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name"
+                            placeholder="أدخل اسمك الكامل"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i>
+                            بريدك الإلكتروني
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            placeholder="أدخل بريدك الإلكتروني"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fas fa-tag"></i>
+                            الموضوع
+                        </label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject"
+                            placeholder="أدخل موضوع الرسالة"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment"></i>
+                            الرسالة
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message"
+                            placeholder="اكتب رسالتك هنا..."
+                            rows="6"
+                            style="width: 100%; padding: var(--spacing-md); border: 2px solid var(--surface-2); border-radius: var(--radius-lg); font-size: 1rem; font-family: inherit; background: var(--surface-2); color: var(--text); resize: vertical; transition: all var(--transition-base);"
+                            required
+                        ></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <span>إرسال الرسالة</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-number" style="font-size: 1rem;">student@example.com</span>
+                    <span class="stat-label">البريد الإلكتروني</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-number" style="font-size: 1rem;">24/7</span>
+                    <span class="stat-label">متاحون للرد</span>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="stat-info">
+                    <span class="stat-number" style="font-size: 1rem;">الأسئلة الشائعة</span>
+                    <span class="stat-label">جميع الأسئلة مرحب بها</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' 
+                ? '<i class="fas fa-sun"></i>' 
+                : '<i class="fas fa-moon"></i>';
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+
+        // Close sidebar when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 1024 && 
+                !sidebar.contains(e.target) && 
+                !menuToggle.contains(e.target)) {
+                sidebar.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>
