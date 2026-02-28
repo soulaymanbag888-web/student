@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://soulaymanbag888-web.github.io/student/">
     <title>المعادلات - Student</title>
     <link rel="icon" type="image/png" href="https://www.bing.com/images/search?view=detailV2&ccid=CW2i4%2bLJ&id=0263F4F74622A05D9D6BB18C813DB89C4CE51F95&thid=OIP.CW2i4-LJBnv6s4ySRIUv7QHaHg&mediaurl=https%3a%2f%2fwww.clipartmax.com%2fpng%2fmiddle%2f284-2845938_icon-student-icon-image-for-students.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.096da2e3e2c9067bfab38c9244852fed%3frik%3dlR%252flTJy4PYGMsQ%26pid%3dImgRaw%26r%3d0&exph=852&expw=840&q=icon+student+32x64&mode=overlay&FORM=IQFRBA&ck=7275373F80A18E12104744FEA1CAB393&selectedIndex=0&idpp=serp">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/student/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -24,24 +23,24 @@
         </div>
         
         <nav class="sidebar-nav">
-            <a href="../dashboard.html" class="nav-item">
+            <a href="/student/dashboard.html" class="nav-item">
                 <i class="fas fa-home"></i>
                 <span>Accueil</span>
             </a>
-            <a href="equations.html" class="nav-item active">
+            <a href="/student/lessons/equations.html" class="nav-item active">
                 <i class="fas fa-calculator"></i>
                 <span>Les équations</span>
             </a>
-            <a href="systeme.html" class="nav-item">
+            <a href="/student/lessons/systeme.html" class="nav-item">
                 <i class="fas fa-columns"></i>
                 <span>systemes</span>
             </a>
-            <a href="../about.html" class="nav-item">
+            <a href="/student/about.html" class="nav-item">
                 <i class="fas fa-info-circle"></i>
                 <span>À propos du site</span>
             </a>
             <div class="sidebar-footer"></div>
-            <a href="../contact.html" class="nav-item">
+            <a href="/student/contact.html" class="nav-item">
                 <i class="fas fa-envelope"></i>
                 <span>Contactez-nous</span>
             </a>
@@ -57,7 +56,7 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="main-content lesson-content">
+    <main class="main-content">
         <!-- Top Bar -->
         <header class="top-bar">
             <button class="menu-toggle" id="menuToggle">
@@ -66,7 +65,6 @@
             
             <div class="header-title">
                 <h1>المعادلات</h1>
-                <span class="breadcrumb">الرئيسية / المعادلات</span>
             </div>
             
             <div class="header-actions">
@@ -77,150 +75,59 @@
         </header>
 
         <!-- Lesson Content -->
-        <div class="lesson-container">
+        <div class="lesson-content">
             <!-- Theory Section -->
             <section class="lesson-section">
                 <div class="section-header">
                     <div class="section-icon">
                         <i class="fas fa-book"></i>
                     </div>
-                    <h2>الدرس: المعادلات من الدرجة الأولى</h2>
+                    <h2>المعادلات من الدرجة الأولى</h2>
                 </div>
                 
-                <div class="theory-content">
-                    <h3>تعريف المعادلة</h3>
-                    <p>المعادلة هي تساوي بين تعبيرين رياضيين يحتويان على متغير واحد أو أكثر. في هذا الدرس، سنتعلم حل المعادلات من الدرجة الأولى بمجهول واحد.</p>
+                <div class="theory-card">
+                    <h3>تعريف</h3>
+                    <p>المعادلة من الدرجة الأولى هي معادلة تأخذ الشكل: <strong>ax + b = 0</strong></p>
+                    <p>حيث <strong>a ≠ 0</strong> و <strong>a</strong> و <strong>b</strong> أعداد حقيقية</p>
                     
-                    <div class="formula-box">
-                        <h4>الصيغة العامة</h4>
-                        <div class="formula">
-                            <span class="katex-display">ax + b = 0</span>
-                        </div>
-                        <p>حيث a ≠ 0</p>
-                    </div>
-                    
-                    <h3>خطوات حل المعادلة</h3>
-                    <ol class="steps-list">
-                        <li>
-                            <span class="step-number">1</span>
-                            <div class="step-content">
-                                <strong>فك الأقواس</strong>
-                                <p>إذا كانت المعادلة تحتوي على أقواس، قم بفكها باستخدام التوزيع</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="step-number">2</span>
-                            <div class="step-content">
-                                <strong>نقل الحدود</strong>
-                                <p>انقل الحدود التي تحتوي على المتغير إلى أحد الطرفين والحدود العددية إلى الطرف الآخر</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="step-number">3</span>
-                            <div class="step-content">
-                                <strong>تبسيط</strong>
-                                <p>اجمع الحدود المتشابهة في كل طرف</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="step-number">4</span>
-                            <div class="step-content">
-                                <strong>القسمة</strong>
-                                <p>قسّم الطرفين على معامل المتغير لإيجاد قيمة المجهول</p>
-                            </div>
-                        </li>
+                    <h3>طريقة الحل</h3>
+                    <p>لحل معادلة من الدرجة الأولى، نتبع الخطوات التالية:</p>
+                    <ol>
+                        <li>ننقل الحدود التي تحتوي على المجهول (x) إلى أحد طرفي المعادلة</li>
+                        <li>ننقل الحدود الثابتة إلى الطرف الآخر</li>
+                        <li>نقسم على معامل x</li>
                     </ol>
-                </div>
-            </section>
-
-            <!-- Examples Section -->
-            <section class="lesson-section examples-section">
-                <div class="section-header">
-                    <div class="section-icon examples">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h2>أمثلة توضيحية</h2>
-                </div>
-                
-                <div class="examples-grid">
-                    <div class="example-card">
-                        <div class="example-title">مثال 1</div>
-                        <div class="example-problem">
-                            <p>حل المعادلة: x + 5 = 12</p>
-                        </div>
-                        <div class="example-solution">
-                            <div class="solution-step">
-                                <span class="step-label">الحل:</span>
-                                <p>x + 5 = 12</p>
-                                <p>x = 12 - 5</p>
-                                <p class="final-answer">x = 7</p>
-                            </div>
-                        </div>
-                        <div class="example-check">
-                            <i class="fas fa-check"></i>
-                            <span>التحقق: 7 + 5 = 12 ✓</span>
-                        </div>
-                    </div>
                     
-                    <div class="example-card">
-                        <div class="example-title">مثال 2</div>
-                        <div class="example-problem">
-                            <p>حل المعادلة: 3x - 4 = 11</p>
-                        </div>
-                        <div class="example-solution">
-                            <div class="solution-step">
-                                <span class="step-label">الحل:</span>
-                                <p>3x - 4 = 11</p>
-                                <p>3x = 11 + 4</p>
-                                <p>3x = 15</p>
-                                <p class="final-answer">x = 5</p>
-                            </div>
-                        </div>
-                        <div class="example-check">
-                            <i class="fas fa-check"></i>
-                            <span>التحقق: 3(5) - 4 = 15 - 4 = 11 ✓</span>
-                        </div>
-                    </div>
-                    
-                    <div class="example-card">
-                        <div class="example-title">مثال 3</div>
-                        <div class="example-problem">
-                            <p>حل المعادلة: 2(x + 3) = 16</p>
-                        </div>
-                        <div class="example-solution">
-                            <div class="solution-step">
-                                <span class="step-label">الحل:</span>
-                                <p>2x + 6 = 16</p>
-                                <p>2x = 16 - 6</p>
-                                <p>2x = 10</p>
-                                <p class="final-answer">x = 5</p>
-                            </div>
-                        </div>
-                        <div class="example-check">
-                            <i class="fas fa-check"></i>
-                            <span>التحقق: 2(5 + 3) = 2(8) = 16 ✓</span>
-                        </div>
+                    <div class="example-box">
+                        <h4>مثال توضيحي:</h4>
+                        <p>حل المعادلة: 2x + 5 = 13</p>
+                        <p>الحل:</p>
+                        <p>2x + 5 = 13</p>
+                        <p>2x = 13 - 5</p>
+                        <p>2x = 8</p>
+                        <p>x = 8 ÷ 2</p>
+                        <p><strong>x = 4</strong></p>
                     </div>
                 </div>
             </section>
 
             <!-- Exercises Section -->
-            <section class="lesson-section exercises-section">
+            <section class="lesson-section">
                 <div class="section-header">
-                    <div class="section-icon exercises">
+                    <div class="section-icon">
                         <i class="fas fa-pencil-alt"></i>
                     </div>
-                    <h2>تمارين</h2>
+                    <h2>التمارين</h2>
                 </div>
                 
-                <div class="exercises-list">
+                <div class="exercises-grid">
                     <div class="exercise-card">
                         <div class="exercise-number">1</div>
                         <div class="exercise-content">
-                            <p class="exercise-problem">حل المعادلة: x + 8 = 15</p>
+                            <p class="exercise-problem">حل المعادلة: x + 3 = 7</p>
                             <div class="exercise-input">
                                 <input type="text" id="ex1-answer" placeholder="أدخل قيمة x">
-                                <button class="check-btn" onclick="checkAnswer('ex1', 7)">تحقق</button>
+                                <button class="check-btn" onclick="checkAnswer('ex1', 4)">تحقق</button>
                             </div>
                             <div class="exercise-result" id="ex1-result"></div>
                         </div>
@@ -229,10 +136,10 @@
                     <div class="exercise-card">
                         <div class="exercise-number">2</div>
                         <div class="exercise-content">
-                            <p class="exercise-problem">حل المعادلة: 4x + 3 = 19</p>
+                            <p class="exercise-problem">حل المعادلة: 3x = 15</p>
                             <div class="exercise-input">
                                 <input type="text" id="ex2-answer" placeholder="أدخل قيمة x">
-                                <button class="check-btn" onclick="checkAnswer('ex2', 4)">تحقق</button>
+                                <button class="check-btn" onclick="checkAnswer('ex2', 5)">تحقق</button>
                             </div>
                             <div class="exercise-result" id="ex2-result"></div>
                         </div>
@@ -267,9 +174,9 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script type="module" src="../js/firebase.js"></script>
-    <script type="module" src="../js/auth.js"></script>
-    <script type="module" src="../js/guard.js"></script>
+    <script type="module" src="/student/js/firebase.js"></script>
+    <script type="module" src="/student/js/auth.js"></script>
+    <script type="module" src="/student/js/guard.js"></script>
     <script>
         function checkAnswer(exerciseId, correctAnswer) {
             const input = document.getElementById(exerciseId + '-answer');
