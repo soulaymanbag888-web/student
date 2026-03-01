@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عن الموقع - Student</title>
     <link rel="icon" type="image/png" href="https://www.bing.com/images/search?view=detailV2&ccid=CW2i4%2bLJ&id=0263F4F74622A05D9D6BB18C813DB89C4CE51F95&thid=OIP.CW2i4-LJBnv6s4ySRIUv7QHaHg&mediaurl=https%3a%2f%2fwww.clipartmax.com%2fpng%2fmiddle%2f284-2845938_icon-student-icon-image-for-students.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.096da2e3e2c9067bfab38c9244852fed%3frik%3dlR%252flTJy4PYGMsQ%26pid%3dImgRaw%26r%3d0&exph=852&expw=840&q=icon+student+32x64&mode=overlay&FORM=IQFRBA&ck=7275373F80A18E12104744FEA1CAB393&selectedIndex=0&idpp=serp">
-    <link rel="stylesheet" href="/student/css/style.css">
+    <link rel="stylesheet" href="/student/css/shared.css">
+    <link rel="stylesheet" href="/student/css/dashboard.css">
+    <link rel="stylesheet" href="/student/css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -166,37 +168,7 @@
     </main>
 
     <script type="module" src="/student/js/firebase.js"></script>
-    <script type="module" src="/student/js/auth.js"></script>
-    <script>
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const html = document.documentElement;
-        
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            html.setAttribute('data-theme', newTheme);
-            themeToggle.innerHTML = newTheme === 'dark' 
-                ? '<i class="fas fa-sun"></i>' 
-                : '<i class="fas fa-moon"></i>';
-        });
-
-        // Mobile Menu Toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const sidebar = document.getElementById('sidebar');
-        
-        menuToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-        });
-
-        // Close sidebar when clicking outside on mobile
-        document.addEventListener('click', (e) => {
-            if (window.innerWidth <= 1024 && 
-                !sidebar.contains(e.target) && 
-                !menuToggle.contains(e.target)) {
-                sidebar.classList.remove('open');
-            }
-        });
-    </script>
+    <script type="module" src="/student/js/guard.js"></script>
+    <script type="module" src="/student/js/about.js"></script>
 </body>
 </html>
